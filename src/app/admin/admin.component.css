@@ -1,0 +1,95 @@
+h1 {
+    padding: 0 1rem;
+}
+
+h2 {
+    padding: 1rem;
+}
+
+mat-toolbar {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+body{
+    width: 100%;
+}
+
+mat-sidenav-container {
+    height: 100%;
+}
+
+mat-sidenav {
+    padding-top: 3.5rem;
+
+    @media screen and (min-width: 600px) {
+        padding-top: 4rem;
+    }
+
+    .entry {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 0.75rem;
+    }
+}
+button{
+    outline: none;
+}
+
+mat-sidenav-content {
+    
+    padding-top: 3.5rem;
+
+    @media screen and (min-width: 600px) {
+        padding-top: 4rem;
+    }
+}
+.expanded {
+    width: 250px;
+}
+.center{
+    display: flex;
+     justify-content: center;
+}
+.bg{
+    height: 120px;
+    background: #eee;
+    margin-top: -50px;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;    }
+.cont{
+      width: 300px;
+      height: 300px;
+    }      /* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+.svg-icon {
+    width: 1em;
+    height: 1em;
+   }
+  
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+        fill: #4691f6;
+        }
+    
+.svg-icon circle {
+    stroke: #4691f6;
+    stroke-width: 1;
+        }
+
+.mt-25{
+margin-top: 20px;
+}
+.mt-30 {
+    margin-top: 30px;
+}
+.custome-bg{
+background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(45, 253, 114, 1) 100%);
+}
+.custome-bg-1{
+background: rgb(216, 27, 96);
+    background: linear-gradient(172deg, rgba(216, 27, 96, 1) 19%, rgba(254, 31, 112, 1) 89%);
+}

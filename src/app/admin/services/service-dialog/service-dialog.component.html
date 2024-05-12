@@ -1,0 +1,14 @@
+<h2 mat-dialog-title>Services</h2>
+<mat-dialog-content>
+  <p>New Service:</p>
+  <mat-form-field>
+    <mat-label>Hair Transplant</mat-label>
+    <input matInput [(ngModel)]="data.service" />
+  </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Close</button>
+  <button mat-button [mat-dialog-close]="data.service" cdkFocusInitial>
+    Ok
+  </button>
+</mat-dialog-actions>

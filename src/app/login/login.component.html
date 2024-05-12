@@ -1,0 +1,35 @@
+<!-- login.component.html -->
+<div class="login-container">
+  <div class="login-box">
+    <div class="logo-container">
+      <!-- Place your logo here -->
+      <img src="../../assets/imgs/logo.png" alt="Logo" class="logo" />
+    </div>
+    <form class="login-form" [formGroup]="form">
+      <mat-form-field class="input-field">
+        <input
+          matInput
+          placeholder="Username"
+          type="text"
+          formControlName="userName"
+        />
+      </mat-form-field>
+      <mat-form-field class="input-field">
+        <input
+          matInput
+          placeholder="Password"
+          type="password"
+          formControlName="password"
+        />
+      </mat-form-field>
+      <button
+        mat-raised-button
+        (click)="login()"
+        color="primary"
+        class="login-button"
+      >
+        Login
+      </button>
+    </form>
+  </div>
+</div>

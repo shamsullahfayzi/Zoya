@@ -1,1 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%;color:#fff !important; }
+body { margin: 0; font-family:InterRegular,
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    sans-serif,
+    Apple Color Emoji,
+    Segoe UI Emoji,
+    Segoe UI Symbol!important;  }
+.form-control:focus {
+    border-color: #00a79d;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgb(0, 167, 157);
+}
+/* body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #6649b8;
+} */
+  :root * {
+      &::-webkit-scrollbar {
+          width: 12px;
+      }
+
+      &::-webkit-scrollbar-track {
+          -webkit-border-radius: 10px;
+          border-radius: 10px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+          -webkit-border-radius: 10px;
+          border-radius: 6px;
+          background:#d81b60;
+      }
+
+      &::-webkit-scrollbar-thumb:window-inactive {
+          background: #a41449;
+      }
+  }
+
+  .mat-drawer-container{
+    background: #fff !important;
+  }

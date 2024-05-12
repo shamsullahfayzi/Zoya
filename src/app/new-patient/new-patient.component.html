@@ -1,0 +1,147 @@
+<!-- <br /><br /><br /><br /><br /> -->
+<div class="h-100">
+  <div class="title">
+    <button
+      mat-icon-button
+      (click)="goBack()"
+      color="primary"
+      aria-label="Back"
+    >
+      <h3>
+        <mat-icon color="accent">chevron_left</mat-icon>
+      </h3>
+    </button>
+  </div>
+  <form [formGroup]="form">
+    <div class="card">
+      <div class="m-4 row">
+        <div class="col-3">
+          <div class="form-group">
+            <label for="patient_name">Patient Name</label>
+            <input
+              formControlName="patient_name"
+              type="email"
+              class="form-control"
+              id="patient_name"
+              placeholder="Ex. Ahmad"
+            />
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="form-group">
+            <label for="province">Province</label>
+            <input
+              class="form-control"
+              id="province"
+              formControlName="province"
+              placeholder="Ex. Kabul"
+            />
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="form-group">
+            <label for="contact">Contact No.</label>
+            <input
+              formControlName="contact_no"
+              type="number"
+              class="form-control"
+              id="patient_name"
+              placeholder="Ex. 009374312879"
+            />
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="form-group">
+            <label for="patient_name">TOS</label>
+            <select
+              formControlName="tos"
+              class="custom-select form-control"
+              *ngFor="let service of services"
+            >
+              <option [value]="service.id">{{ service.service }}</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="form-group">
+            <label for="">PRC</label>
+            <select formControlName="prc" class="custom-select form-control">
+              <option selected>Call Center</option>
+              <option value="1">Referred by Friend</option>
+              <option value="2">Self Visit</option>
+              <option value="3">Barber</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="form-group">
+            <label for="Price">Price</label>
+            <input
+              formControlName="price"
+              type="number"
+              class="form-control"
+              id="Price"
+              placeholder="5000"
+            />
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="form-group">
+            <label for="date">Calling Date</label>
+            <input
+              formControlName="calling_date"
+              type="date"
+              class="form-control"
+              id="date"
+            />
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="form-group">
+            <label for="date">Appointment Date</label>
+            <input
+              formControlName="appointment_date"
+              type="date"
+              class="form-control"
+              id="date"
+            />
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="form-group">
+            <label for="remarks">Remarks </label>
+            <input
+              type="text"
+              class="form-control"
+              formControlName="remarks"
+              id="remarks"
+              placeholder="Optional*"
+            />
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="form-group">
+            <label for="">Status</label>
+            <select class="custom-select form-control" formControlName="status">
+              <option selected>Confirmed</option>
+              <option value="1">Comming soon</option>
+              <option value="2">Self Visit</option>
+              <option value="3">Barber</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-4 mt">
+          <button
+            [disabled]="!form.valid"
+            (click)="save()"
+            class="save"
+            mat-flat-button
+            color="accent"
+          >
+            Save
+          </button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

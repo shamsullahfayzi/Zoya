@@ -1,0 +1,15 @@
+ .content {
+     /* display: flex; */
+     margin: 82px auto 32px;
+     padding: 0 16px;
+     width: 80%;
+     flex-direction: column;
+     align-items: center;
+ }
+   .right {
+       float: right;
+   }
+
+   .m-4 {
+       margin: 4px;
+   }

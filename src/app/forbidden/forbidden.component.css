@@ -1,0 +1,20 @@
+.container {
+    text-align: center;
+    margin-top: 150px;
+}
+
+.icon {
+    font-size: 64px;
+    color: #f44336;
+    /* Red color */
+}
+
+.title {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.message {
+    font-size: 16px;
+    margin-top: 20px;
+}

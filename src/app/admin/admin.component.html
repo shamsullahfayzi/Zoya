@@ -1,0 +1,131 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-2 m-5 bg">
+      <div class="row">
+        <div class="col-6 mt-25">
+          <img
+            src="../../assets/imgs/money-box-with-dollar-coin-svgrepo-com.svg"
+            width="75px"
+            height="75px"
+            alt=""
+          />
+        </div>
+        <div class="col-6 mt-25">
+          <span style="font-weight: bold">Monthly Income</span>
+          <p>$1250</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-2 m-5 bg custome-bg">
+      <div class="row">
+        <div class="col-6 mt-25">
+          <img
+            src="../../assets/imgs/way-svgrepo-com.svg"
+            width="75px"
+            height="75px"
+            alt=""
+          />
+        </div>
+        <div class="col-6 mt-25">
+          <span style="font-weight: bold">Incoming patients</span>
+          <p>4</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-2 m-5 bg custome-bg-1">
+      <div class="row">
+        <div class="col-6 mt-25">
+          <img
+            src="../../assets/imgs/users-group-svgrepo-com.svg"
+            width="75px"
+            height="75px"
+            alt=""
+          />
+        </div>
+        <div class="col-6 mt-30">
+          <span style="font-weight: bold">Users</span>
+          <p>12</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-2 m-5 bg">
+      <div class="row">
+        <div class="col-6 mt-25">
+          <img
+            src="../../assets/imgs/ambulance-emergency-medical-hospital-service-svgrepo-com.svg"
+            width="75px"
+            height="75px"
+            alt=""
+          />
+        </div>
+        <div class="col-6 mt-30">
+          <span style="font-weight: bold">Services</span>
+          <p>23</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row p-4 m-4">
+    <h3>Status</h3>
+    <div class="col-4">
+      <div id="chart">
+        <apx-chart
+          [series]="sales.series"
+          [chart]="sales.chart"
+          [labels]="sales.labels"
+          [fill]="sales.fill"
+          [stroke]="sales.stroke"
+          [responsive]="sales.responsive"
+        ></apx-chart>
+      </div>
+    </div>
+    <div class="col-2"></div>
+    <h3 class="">Sales</h3>
+    <!-- sales to show which product is sold the most not product basicaly service -->
+    <div class="col-4">
+      <div id="chart">
+        <apx-chart
+          [series]="sales.series"
+          [chart]="sales.chart"
+          [labels]="sales.labels"
+          [fill]="sales.fill"
+          [stroke]="sales.stroke"
+          [responsive]="sales.responsive"
+        ></apx-chart>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row p-4 m-4 center">
+    <div class="col-4 m-4 p-2">
+      <div id="chart">
+        <apx-chart
+          [series]="weekSales.series"
+          [chart]="weekSales.chart"
+          [xaxis]="weekSales.xaxis"
+          [dataLabels]="weekSales.dataLabels"
+          [grid]="weekSales.grid"
+          [stroke]="weekSales.stroke"
+          [title]="weekSales.title"
+        ></apx-chart>
+      </div>
+    </div>
+    <div class="col-2 m-4"></div>
+    <div class="col-4 m-4 p-2">
+      <div id="chart">
+        <apx-chart
+          [series]="weekSales.series"
+          [chart]="weekSales.chart"
+          [xaxis]="weekSales.xaxis"
+          [dataLabels]="weekSales.dataLabels"
+          [grid]="weekSales.grid"
+          [stroke]="weekSales.stroke"
+          [title]="weekSales.title"
+        ></apx-chart>
+      </div>
+    </div>
+  </div>
+</div>

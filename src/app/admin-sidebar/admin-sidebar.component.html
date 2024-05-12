@@ -1,0 +1,120 @@
+<mat-toolbar
+  style="
+    background-color: #f7f7fe;
+    border-bottom: 1px solid #f0f0f0;
+    float: right;
+  "
+>
+  <div style="margin-left: 95%">
+    <div>
+      <img
+        src="../assets/imgs/payroll.svg"
+        alt=""
+        width="34px"
+        height="34px"
+        style="border-radius: 50%; margin-right: 13px"
+      />
+
+      <img
+        src="../assets/imgs/user-thumbnail.png"
+        alt=""
+        width="34px"
+        height="34px"
+        style="border-radius: 50%"
+      />
+    </div>
+  </div>
+</mat-toolbar>
+<mat-sidenav>
+  <!-- <mat-nav-list>
+      <a routerLink="/admin" class="mr-3" mat-list-item>
+        <span class="entry">
+          <img
+            width="130"
+            alt="Zoya Beauty Logo"
+            class="ml-3"
+            src="../assets/imgs/logo.png"
+          />
+        </span>
+      </a>
+    </mat-nav-list> -->
+  <mat-nav-list class="nav-first mb-2 pb-2 pt-2" style="font-size: 18px">
+    <span class="entry">
+      <img
+        src="../assets/imgs/payroll.svg"
+        class="ml-1"
+        width="24px"
+        height="24px"
+      />
+      <span class="ml-2" style="font-size: 18px">Management</span>
+    </span>
+  </mat-nav-list>
+  <mat-nav-list>
+    <a routerLink="/admin" mat-list-item>
+      <span class="entry">
+        <svg viewBox="0 0 469.05 469.05" class="icon lpanel-icon">
+          <path
+            d="M234.52 469.05c-62.64 0-121.54-24.39-165.83-68.69S0 297.17 0 234.52 24.39 112.99 68.69 68.69 171.88 0 234.52 0s121.54 24.39 165.83 68.69 68.69 103.19 68.69 165.83-24.39 121.54-68.69 165.83-103.19 68.69-165.83 68.69zm0-427.05C128.36 42 42 128.37 42 234.52s86.37 192.52 192.52 192.52 192.52-86.37 192.52-192.52S340.68 42 234.52 42z"
+          ></path>
+          <path
+            d="M234.52 255.52c-5.38 0-10.75-2.05-14.85-6.15-8.2-8.2-8.2-21.5 0-29.7l85.42-85.42c8.2-8.2 21.5-8.2 29.7 0s8.2 21.5 0 29.7l-85.42 85.42c-4.1 4.1-9.48 6.15-14.85 6.15z"
+          ></path>
+        </svg>
+        <span>Dashboard</span>
+      </span>
+    </a>
+  </mat-nav-list>
+  <mat-nav-list>
+    <a routerLink="/admin/users" mat-list-item>
+      <span class="entry">
+        <svg viewBox="0 0 512 512" class="icon lpanel-icon">
+          <path
+            d="M435.7 322.5c-28.6-28.3-66.6-43.7-106.9-43.3l-73 .7-75.6.7c-39.7.4-77 16.2-105 44.4s-43.3 65.7-43.3 105.4v31.7c0 11 9 20 20 20s20-9 20-20v-31.7c0-29.1 11.3-56.6 31.8-77.2s47.8-32.2 76.9-32.5l55.2-.5v69.2c0 11 9 20 20 20s20-9 20-20v-69.6l53.4-.5c29.5-.3 57.4 11 78.3 31.8 21 20.8 32.5 48.5 32.5 78v29.1c0 11 9 20 20 20s20-9 20-20v-29.1c.1-40.4-15.7-78.2-44.3-106.6zm-179.9-80.2c58.8 0 106.7-47.6 106.7-106.2S314.6 29.9 255.8 29.9 149.1 77.5 149.1 136.1 197 242.3 255.8 242.3zm0-172.4c36.8 0 66.7 29.7 66.7 66.2s-29.9 66.2-66.7 66.2-66.7-29.7-66.7-66.2 29.9-66.2 66.7-66.2z"
+          ></path>
+        </svg>
+
+        <span>Users</span>
+      </span>
+    </a>
+  </mat-nav-list>
+  <mat-nav-list>
+    <a routerLink="/admin/reports" mat-list-item>
+      <span class="entry">
+        <svg viewBox="0 0 512 512" class="icon lpanel-icon">
+          <path
+            d="M383.8 27.8h-256c-55.1 0-100 44.9-100 100V384c0 55.1 44.9 100 100 100h256c55.1 0 100-44.9 100-100V127.8c0-55.1-44.8-100-100-100zm60 356.2c0 33.1-26.9 60-60 60h-256c-33.1 0-60-26.9-60-60V127.8c0-33.1 26.9-60 60-60h256c33.1 0 60 26.9 60 60V384z"
+          ></path>
+          <path
+            d="M159.7 235.9c-11 0-20 9-20 20v127.8c0 11 9 20 20 20s20-9 20-20V255.9c0-11-9-20-20-20zm192.4-58.2c-11 0-20 9-20 20V384c0 11 9 20 20 20s20-9 20-20V197.7c0-11.1-9-20-20-20zm-95.8-53.3c-11 0-20 9-20 20v239.5c0 11 9 20 20 20s20-9 20-20V144.4c0-11-9-20-20-20z"
+          ></path>
+        </svg>
+        <span>Reports</span>
+      </span>
+    </a>
+  </mat-nav-list>
+  <mat-nav-list>
+    <a [routerLink]="['/logout']" mat-list-item>
+      <span class="entry">
+        <svg viewBox="0 0 512 512" class="icon lpanel-icon">
+          <path
+            d="M493.9 185.8C475.8 130.3 438.7 82 388.5 48.2l10.4-18.1c5.5-9.6 2.2-21.8-7.3-27.3-9.6-5.5-21.8-2.2-27.3 7.3l-10.4 18.1C299.4 1.5 238.9-6.6 181.7 5.5c-64.3 13.6-116.8 50.8-148 104.8-2.7 4.6-3.4 10.1-2 15.2s4.7 9.5 9.3 12.1l187 108-121.4 210.2c-4.3 7.5-11.3 12.8-19.6 15.1-8.3 2.2-17.1 1.1-24.5-3.2S49.6 456.4 47.4 448c-2.2-8.3-1.1-17.1 3.2-24.5 5.5-9.6 2.2-21.8-7.3-27.3-9.6-5.5-21.8-2.3-27.3 7.3-9.7 16.7-12.2 36.2-7.2 54.9 5 18.7 17 34.3 33.7 43.9 11.4 6.6 23.8 9.7 36.1 9.7 25 0 49.4-13 62.8-36.2l121.4-210.2 187.1 108.1c3.1 1.8 6.5 2.7 10 2.7 1.7 0 3.5-.2 5.2-.7 5.1-1.4 9.5-4.7 12.1-9.3 31.1-54 37.1-118.1 16.7-180.6zm-155.5 77.4l-73-42.2-72.9-42.1c24.9-38.7 54.6-70.5 84.9-90.7 30.1-20 57.1-25.9 74.1-16 32.5 18.8 33.8 99.9-13.1 191zM273.9 43.7c-6.2 3.3-12.5 7-18.8 11.2-35.2 23.5-69.3 60-97.4 104l-78.4-45.3c43.1-57.9 118.9-83.4 194.6-69.9zm177.6 284.8L373 283.2c24.1-46.3 38.7-94.1 41.4-136.3.5-7.6.6-14.9.3-21.9 49.6 58.9 65.3 137.3 36.8 203.5z"
+          ></path>
+        </svg>
+        <span>Staff</span>
+      </span>
+    </a>
+  </mat-nav-list>
+  <mat-nav-list>
+    <a [routerLink]="['/admin/services']" mat-list-item>
+      <span class="entry">
+        <svg class="icon lpanel-icon" viewBox="0 0 24 24">
+          <path
+            d="M13.5 8H4m0-2v13a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1h-5.032a1 1 0 0 1-.768-.36l-1.9-2.28a1 1 0 0 0-.768-.36H5a1 1 0 0 0-1 1Z"
+          />
+        </svg>
+
+        <span>Services</span>
+      </span>
+    </a>
+  </mat-nav-list>
+</mat-sidenav>
